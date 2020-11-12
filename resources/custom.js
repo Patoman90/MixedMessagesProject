@@ -14,7 +14,11 @@ const randomSayingMaker = () => {
     const chooseSaying = [saying1, saying2, saying3, saying4, saying5, saying6, saying7,saying8, saying9, saying10];
     const randomWord = Math.floor(Math.random() * chooseSaying.length);
     const newSaying = chooseSaying[randomWord];
-    let sayThis = document.getElementById("pickMe").innerHTML= newSaying;
-    
-        return sayThis;
+
+
+    let changeThis = document.getElementById("#pickMe").addEventListener('click', sayThis);
+
+    let sayThis = (event) => { return changeThis.innerHTML= newSaying;};
+
+    return sayThis();
 };
