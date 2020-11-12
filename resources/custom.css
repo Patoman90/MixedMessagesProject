@@ -1,0 +1,50 @@
+
+/*Custom CSS styles*/
+
+/*General body styling*/
+body{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ontarioparks.com%2Fparksblog%2Fwp-content%2Fuploads%2F2017%2F06%2FPointFarms_Sunset_.jpg&f=1&nofb=1");
+    background-repeat: round;
+    color: rgb(223, 214, 184);
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/*Shared text styles*/
+h1,h2,p {
+    padding: 5%;
+    text-shadow: 2px 2px blue;
+}
+
+/*Paragraph*/
+p {
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+/*Button element*/
+button {
+    background-color: orangered;
+    color:whitesmoke;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px black;
+    font-size: 20px;
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin: 20px;
+    transition-duration: 0.4s;
+    
+}
+
+
+/* Styles when the button is clicked.*/
+button:active {
+  background-color: red;
+  box-shadow: 0 5px rgb(223, 214, 184);
+  transform: translateY(4px);
+}
