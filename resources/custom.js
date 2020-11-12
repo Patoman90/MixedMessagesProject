@@ -13,11 +13,11 @@ let saying8 = "Mankind has nothing only when he lacks the will.";
 let saying9 = "When the goals we set are not ours and our success is not theirs.";
 let saying10 = "Your path is a mixture of your choices and hesitations.";
 
+const chooseSaying = [saying1, saying2, saying3, saying4, saying5, saying6, saying7,saying8, saying9, saying10];
+const randomWord = Math.floor(Math.random() * chooseSaying.length);
+
 let changeThis = document.querySelector("button");
 
 changeThis.addEventListener('click', () => {
-  const chooseSaying = [saying1, saying2, saying3, saying4, saying5, saying6, saying7,saying8, saying9, saying10];
-  const randomWord = Math.floor(Math.random() * chooseSaying.length);
-  
   document.getElementById('pickMe').innerHTML= chooseSaying[randomWord];
 });
